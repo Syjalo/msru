@@ -182,11 +182,11 @@ describe('ms(number, { long: true })', function () {
   it('should support days', function () {
     expect(ms(24 * 60 * 60 * 1000, { long: true })).toBe('1 день');
     expect(ms(24 * 60 * 60 * 1200, { long: true })).toBe('1 день');
-    expect(ms(24 * 60 * 60 * 10000, { long: true })).toBe('10 дней');
+    expect(ms(24 * 60 * 60 * 6000, { long: true })).toBe('6 дней');
 
     expect(ms(-1 * 24 * 60 * 60 * 1000, { long: true })).toBe('-1 день');
     expect(ms(-1 * 24 * 60 * 60 * 1200, { long: true })).toBe('-1 день');
-    expect(ms(-1 * 24 * 60 * 60 * 10000, { long: true })).toBe('-10 дней');
+    expect(ms(-1 * 24 * 60 * 60 * 6000, { long: true })).toBe('-6 дней');
   });
 
   it('should round', function () {
@@ -237,10 +237,10 @@ describe('ms(number)', function () {
 
   it('should support days', function () {
     expect(ms(24 * 60 * 60 * 1000)).toBe('1 д.');
-    expect(ms(24 * 60 * 60 * 10000)).toBe('10 д.');
+    expect(ms(24 * 60 * 60 * 6000)).toBe('6 д.');
 
     expect(ms(-1 * 24 * 60 * 60 * 1000)).toBe('-1 д.');
-    expect(ms(-1 * 24 * 60 * 60 * 10000)).toBe('-10 д.');
+    expect(ms(-1 * 24 * 60 * 60 * 6000)).toBe('-6 д.');
   });
 
   it('should round', function () {
