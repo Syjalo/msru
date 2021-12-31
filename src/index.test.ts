@@ -40,7 +40,7 @@ describe('ms(string)', function () {
   });
 
   it('should convert mnth to ms', function () {
-    expect(ms('12м')).toBe(31557600000);
+    expect(ms('12мес')).toBe(31104000000);
   });
 
   it('should work with decimals', function () {
@@ -122,7 +122,7 @@ describe('ms(long string)', function () {
   });
 
   it('should convert months to ms', function () {
-    expect(ms('12 м')).toBe(31557600000);
+    expect(ms('12 мес')).toBe(31104000000);
   });
 
   it('should work with decimals', function () {
