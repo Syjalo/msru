@@ -7,5 +7,5 @@
     "strict": true,
     "target": "ES2019"
   },
-  "include": ["src/"]
+  "include": ["src/", "dist/index.js"]
 }
