@@ -2,7 +2,7 @@
 // @ts-check
 import { mkdirSync, readFileSync, rmdirSync } from 'fs';
 import { writeFile } from 'fs/promises';
-import { join, sep } from 'path';
+import { join } from 'path';
 import ts from 'typescript';
 
 const DIR = './dist';
@@ -37,7 +37,7 @@ function compile(files, options) {
 
   host.writeFile = (fileName, contents) => {
     const isDts = fileName.endsWith('.d.ts');
-    let path = join(DIR, fileName.split(sep)[1]);
+    let path = join(DIR, fileName.split('/')[1]);
 
     if (!isDts) {
       switch (compilerOptions.module) {

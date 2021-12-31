@@ -1,8 +1,15 @@
 {
-  "name": "msru",
+  "name": "rums",
   "version": "1.0.0",
   "description": "Небольшая утилита для конвертации в миллисекунды на русском языке",
-  "repository": "vercel/ms",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Syjalo/rums.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Syjalo/rums/issues"
+  },
+  "homepage": "https://github.com/Syjalo/rums#readme",
   "main": "./dist/index.cjs",
   "type": "module",
   "exports": {
