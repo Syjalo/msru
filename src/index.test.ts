@@ -39,6 +39,10 @@ describe('ms(string)', function () {
     expect(ms('1г')).toBe(31557600000);
   });
 
+  it('should convert mnth to ms', function () {
+    expect(ms('12м')).toBe(31557600000);
+  });
+
   it('should work with decimals', function () {
     expect(ms('1.5ч')).toBe(5400000);
   });
@@ -55,7 +59,7 @@ describe('ms(string)', function () {
   });
 
   it('should be case-insensitive', function () {
-    expect(ms('1.5Ч')).toBe(5400000);
+    expect(ms('1.5ч')).toBe(5400000);
   });
 
   it('should work with numbers starting with .', function () {
@@ -115,6 +119,10 @@ describe('ms(long string)', function () {
 
   it('should convert years to ms', function () {
     expect(ms('1 г')).toBe(31557600000);
+  });
+
+  it('should convert months to ms', function () {
+    expect(ms('12 м')).toBe(31557600000);
   });
 
   it('should work with decimals', function () {
