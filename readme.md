@@ -1,4 +1,4 @@
-# ms
+# rums
 
 ![CI](https://github.com/Syjalo/msru/workflows/CI/badge.svg)
 
