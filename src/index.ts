@@ -361,7 +361,7 @@ const plurals = {
   short: {
     year: {
       one: '# г.',
-      many: '# г.',
+      few: '# г.',
       other: '# л.',
     },
     month: {
